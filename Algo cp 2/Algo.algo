@@ -1,0 +1,27 @@
+ALGORITHM algo_2
+VAR
+    set1 : array_name : ARRAY_OF INTEGER[2];
+    set2 array_name : ARRAY_OF INTEGER[4];
+    i , j :INTEGER ;
+    sum := 0 of INTEGER;
+    found : BOOLEAN;
+BEGIN
+    read (set1);
+    read (set2);
+    FOR i FROM 0 TO length (set1)  DO
+    FOR j FROM 0 TO length (set2)  DO
+    
+IF (set1[i] == set2[j]) THEN
+    found = true;
+    else 
+    found = false;
+END_IF
+    END_FOR  
+    IF ( found = null) THEN
+        sum = sum + set1
+    ELSE
+        sum = sum + set2
+    END_IF
+    
+    
+END
